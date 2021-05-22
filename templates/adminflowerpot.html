@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="../static/adminflowerpot.css">
+    <link rel = "icon" href ="../static/conc41.png" type = "image/x-icon">
+</head>
+<body>
+
+    <div class="sidebar">
+
+
+      <a  href = {{ url_for("aflowerpot") }}>Flowerpot</a>
+      <a href ={{ url_for("anashtray") }}>Ashtray</a>
+      <a href ={{ url_for("achess") }}>Chess</a>
+      <a href ={{ url_for("alamp") }}>Lamp</a>
+        <a href ={{ url_for("asale") }}>Sale</a>
+    </div>
+
+
+    <div class="content">
+        <h1>MAIN PAGE ADMIN PANEL</h1>
+        <h2>NEW ARRIVALS ADMIN</h2>
+
+
+        <div class="newarrival">
+            <label for = "newarr-img"></label>
+            <input type = "text" placeholder="IMAGE" id = "newarr-img" required >
+
+            <input type="submit" value="Change">
+        </div>
+
+
+        <div class="newarrival">
+            <label for = "gela"></label>
+            <input type = "text" placeholder="PRICE" id = "gela" required >
+
+            <input type="submit" value="Change">
+        </div>
+
+        <div class="newarrival">
+            <label for = "color"></label>
+            <input type = "text" placeholder="COLOURS" id = "color" required >
+
+            <input type="submit" value="Change">
+        </div>
+
+
+        <h2>COLLECTIONS ADMIN</h2>
+
+        <div class="collection">
+            <label for = "coll-img"></label>
+            <input type = "text" placeholder="IMAGE" id = "coll-img" required >
+
+            <input type="submit" value="Change">
+        </div>
+
+        <div class="border"><h1>FLOWERPOT ADMIN PANEL</h1></div>
+
+         <div class="flowerpotphoto">
+            <label for = "flowphoto"></label>
+            <input type = "text" placeholder="IMAGE" id = "flowphoto" required >
+
+             <input type="submit" value="Change">
+         </div>
+
+
+         <div class="flowerpotcolor">
+            <label for = "flowcolor"></label>
+            <input type = "text" placeholder="COLOR" id = "flowcolor" required >
+
+            <input type="submit" value="Change">
+        </div>
+
+        <div class="flowergela">
+            <label for = "flowgela"></label>
+            <input type = "text" placeholder="PRICE" id = "flowgela" required >
+
+            <input type="submit" value="Change">
+        </div>
+
+
+        <div class="flowerheight">
+            <label for = "flowheight"></label>
+            <input type = "text" placeholder="HEIGHT" id = "flowheight" required >
+
+            <input type="submit" value="Change">
+        </div>
+
+
+        <div class="flowerinner">
+            <label for = "flowinner"></label>
+            <input type = "text" placeholder="INNER DIAMETER" id = "flowinner" required >
+
+            <input type="submit" value="Change">
+        </div>
+
+
+        <div class="flowerouter">
+            <label for = "flowouter"></label>
+            <input type = "text" placeholder="OUTER DAIMETER" id = "flowouter" required >
+
+            <input type="submit" value="Change">
+        </div>
+
+
+        <div class="flowercode">
+            <label for = "flowcode"></label>
+            <input type = "text" placeholder="CODE" id = "flowcode" required >
+
+            <input type="submit" value="Change">
+        </div>
+
+
+    </div>
+</body>
+</html>

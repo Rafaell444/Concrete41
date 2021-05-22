@@ -1,0 +1,186 @@
+{% block navbar %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block style %}{% endblock %}
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/b8b7d7113c.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <meta charset="UTF-8">
+    <title>CONCRETE 41</title>
+
+    <meta name="title" content="CONCRETE 41 - Handcrafted Concrete Items">
+    <meta name="description" content="We Make: Flower Pots, Ashtrays, Decorations, Concrete Items.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="CONCRETE 41">
+    <meta property="og:title" content="CONCRETE 41 - Handcrafted Concrete Items" />
+    <meta property="og:description" content="We makes: Flower Pots, Ashtrays, Decorations, concrete items." />
+{#    <meta property="og:url" content="https://concrete41.com/" />#}
+{#    <meta property="og:image" content="https://wandio.com/media/1255/fb-main.png" />#}
+
+    <link rel = "icon" href ="../static/conc41.png" type = "image/x-icon">
+
+</head>
+    <body>
+
+
+    <div class="loader">
+        <img src="../static/spin.gif" alt="loading...">
+    </div>
+
+    <script type="text/javascript">
+        window.addEventListener("load",function (){
+
+            const loader = document.querySelector(".loader");
+            loader.className += " hidden";
+        });
+
+    </script>
+
+
+
+        <header class="header">
+           <div class=" inner-header" >
+
+
+             <div class="logo" ><a href="/"><img src="../static/CONCRETE%2041.png" alt="LOGO"></a></div>
+             <div class=" navigation">
+                   <ul>
+                        <li class="smths"><a href="{{ url_for("flowerpot") }}" style="text-decoration: none" class="hello lang" >{{ _('FLOWERPOT') }}</a></li>
+                        <li class="smths"><a href="{{ url_for("ashtray") }}" style="text-decoration: none" class="hello lang" >{{ _('ASHTRAY') }}</a> </li>
+                        <li class="smths"><a href="{{ url_for("chess") }}" style="text-decoration: none" class="hello lang" >{{ _('CHESS') }}</a></li>
+                            <li class="smths"><a href="{{ url_for("lamp") }}" style="text-decoration: none" class="hello lang" >{{ _('LAMP') }}</a></li>
+                        <li class="smths"><a href="{{ url_for("sale") }}" style="text-decoration: none" class="hello lang" >{{ _('SALE') }}</a> </li>
+
+                       <li class="smths"><a href="{{ url_for("about") }}" style="text-decoration: none" class="hello lang" key="about us">{{ _('ABOUT US') }}</a></li>
+
+ <li class="trans"><a id="en" class="translate"><img src="../static/uk.png" alt = "enflag" width="40px" height="30px"></a></li>
+                       <li class="trans1"><a id="ka" class="translate"><img src="../static/Georgia.png" width="40px" height="30px" alt = "geoflag"></a></li>
+
+                    </ul>
+
+
+             </div>
+               <div class="responsive-menu" onclick="openNav()"><i class="fas fa-bars"></i></div>
+
+<div class="sidevabhamburger">
+   <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="" class="nav_link"><a href="{{ url_for("flowerpot") }}" style="text-decoration: none" class="hello lang" >{{ _('FLOWERPOT') }}</a></a>
+    <a href="" class="nav_link"><a href="{{ url_for("ashtray") }}" style="text-decoration: none" class="hello lang" >{{ _('ASHTRAY') }}</a></a>
+    <a href="" class="nav_link"><a href="{{ url_for("chess") }}" style="text-decoration: none" class="hello lang" >{{ _('CHESS') }}</a></a>
+    <a href="" class="nav_link"><a href="{{ url_for("lamp") }}" style="text-decoration: none" class="hello lang" >{{ _('LAMP') }}</a></a>
+       <a href="" class="nav_link"><a href="{{ url_for("sale") }}" style="text-decoration: none" class="hello lang" >{{ _('SALE') }}</a></a>
+       <a href="" class="nav_link"><a href="{{ url_for("about") }}" style="text-decoration: none" class="hello lang" key="about us">{{ _('ABOUT US') }}</a></a>
+       <a href="" class="nav_link"><li class="trans"><a id="en" class="translate"><img src="../static/uk.png" alt = "enflag" width="40px" height="30px"></a></li></a>
+        <a href="" class="nav_link"><li class="trans1"><a id="ka" class="translate"><img src="../static/Georgia.png" width="40px" height="30px" alt = "geoflag"></a></li></a>
+
+  </div>
+</div>
+               <script>
+
+                   function openNav() {
+                    document.getElementById("mySidenav").style.width = "100%";
+}
+
+                   function closeNav() {
+                       document.getElementById("mySidenav").style.width = "0";
+                        }
+
+               </script>
+       </div>
+    </header>
+
+{% endblock %}
+
+{% block contenthome %}{% endblock %}
+{% block contentcare %}{% endblock %}
+{% block contentflower %}{% endblock %}
+{% block contentash %}{% endblock %}
+{% block contentchess %}{% endblock %}
+{% block contentlamp %}{% endblock %}
+{% block contentabout %}{% endblock %}
+{% block contentsale %}{% endblock %}
+{% block contentpol %}{% endblock %}
+{% block contentterm %}{% endblock %}
+
+
+
+
+{% block footer %}    <div class="footer-container">
+        <div class="footer">
+            <div class="footer-heading footer-1">
+                <h2 class="lang" key="seven">{{ _('Quick Links') }}</h2>
+                <a href="{{ url_for("terms") }}" class="lang" key="eight">{{ _('Terms & Conditions') }}</a>
+                <a href="{{ url_for("care") }}" class="lang" key="nine">{{ _('Care Instruction') }}</a>
+                <a href="{{ url_for("policy") }}" class="lang" key="ten">{{ _('Privacy Policy') }}</a>
+            </div>
+            <div class="footer-heading footer-2">
+                <h2 class="lang" key="eleven">{{ _('Contact Info') }}</h2>
+                <a href="tel:+995-599-47-98-81">+995 599 47 98 81</a>
+                <a href="mailto:info.concrete41@gmail.com">info.concrete41@gmail.com</a>
+
+            </div>
+            <div class="footer-email-form">
+                <h2 class="lang" key="twelve">{{ _('Sign Up On Our Mailing List:') }}  </h2>
+                <label for="footer-email"></label><input type="email" placeholder="Enter Your Email Address" id="footer-email" required>
+                <input type="submit" value="Join" id="footer-email-btn">
+
+            </div>
+            <div class="footer-heading footer-4">
+
+                <div class="row"><a href="https://www.youtube.com" class="fa fa-youtube" target="_blank"  ></a></div>
+                <div class="row"><a href="https://www.instagram.com/concrete.41/" class="fa fa-instagram" target="_blank"></a></div>
+                <div class="row"><a href="https://www.pinterest.com/Concrete41/_created/" class="fa fa-pinterest" target="_blank"></a></div>
+                <div class="row"><a href="https://www.facebook.com/Concrete41/" class="fa fa-facebook" target="_blank"></a></div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+<div class="footerbelow-container">
+    <div class="footerbelow">
+
+        <p>&#169;COPYRIGHT 2021,CONCRETE41</p>
+    </div>
+</div>
+
+    <script>
+
+        document.getElementById("footer-email-btn").addEventListener("click",function (){
+            let footer_email_data = document.getElementById("footer-email").value
+
+            $.post("/save_response",{"email_data": footer_email_data})
+
+
+
+            document.getElementById('footer-email').value='';
+
+            document.getElementById('footer-email').value="Submitted";
+
+            document.getElementById('footer-email').style.color = "green";
+
+           setTimeout(
+    function() {
+      document.getElementById('footer-email').value='';
+    }, 2000);
+
+
+
+        })
+    </script>
+
+
+
+
+    </body>
+</html>
+{% endblock %}
+

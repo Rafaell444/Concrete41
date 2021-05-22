@@ -1,0 +1,80 @@
+# Georgian translations for PROJECT.
+# Copyright (C) 2021 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2021-03-22 14:16+0400\n"
+"PO-Revision-Date: 2021-03-22 14:54+0400\n"
+"Language: ka\n"
+"Language-Team: ka <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+"Last-Translator: \n"
+"X-Generator: Poedit 2.4.2\n"
+
+#: templates/index.html:19
+msgid "FLOWERPOT"
+msgstr "საყვავილე ქოთანი"
+
+#: templates/index.html:20
+msgid "ASHTRAY"
+msgstr "საფერფლე"
+
+#: templates/index.html:21
+msgid "CHESS"
+msgstr "ჭადრაკი"
+
+#: templates/index.html:22
+msgid "LAMP"
+msgstr "სანათი"
+
+#: templates/index.html:23
+msgid "SALE"
+msgstr "ფასდაკლება"
+
+#: templates/index.html:25
+msgid "ABOUT US"
+msgstr "ჩვენს შესახებ"
+
+#: templates/index.html:96
+msgid "NEW ARRIVALS"
+msgstr "ახალი"
+
+#: templates/index.html:107 templates/index.html:119 templates/index.html:133
+msgid "Concrete FlowerPot"
+msgstr "ბეტონის საყვავილე"
+
+#: templates/index.html:150
+msgid "COLLECTIONS"
+msgstr "კოლექცია"
+
+#: templates/index.html:208
+msgid "Quick Links"
+msgstr "ნავიგაცია"
+
+#: templates/index.html:209
+msgid "Terms & Conditions"
+msgstr "წესები და პირობები"
+
+#: templates/index.html:210
+msgid "Care Instruction"
+msgstr "მოვლის ინსტრუქცია"
+
+#: templates/index.html:211
+msgid "Privacy Policy"
+msgstr "კონფიდენციალურობის პოლიტიკა"
+
+#: templates/index.html:214
+msgid "Contact Info"
+msgstr "საკონტაქტო ინფორმაცია"
+
+#: templates/index.html:219
+msgid "Sign Up On Our Mailing List:"
+msgstr "გამოიწერეთ ჩვენი ნიუსლეთერი:"

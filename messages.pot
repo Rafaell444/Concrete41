@@ -1,0 +1,79 @@
+# Translations template for PROJECT.
+# Copyright (C) 2021 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2021-03-22 14:16+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: templates/index.html:19
+msgid "FLOWERPOT"
+msgstr ""
+
+#: templates/index.html:20
+msgid "ASHTRAY"
+msgstr ""
+
+#: templates/index.html:21
+msgid "CHESS"
+msgstr ""
+
+#: templates/index.html:22
+msgid "LAMP"
+msgstr ""
+
+#: templates/index.html:23
+msgid "SALE"
+msgstr ""
+
+#: templates/index.html:25
+msgid "ABOUT US"
+msgstr ""
+
+#: templates/index.html:96
+msgid "NEW ARRIVALS"
+msgstr ""
+
+#: templates/index.html:107 templates/index.html:119 templates/index.html:133
+msgid "Concrete FlowerPot"
+msgstr ""
+
+#: templates/index.html:150
+msgid "COLLECTIONS"
+msgstr ""
+
+#: templates/index.html:208
+msgid "Quick Links"
+msgstr ""
+
+#: templates/index.html:209
+msgid "Terms & Conditions"
+msgstr ""
+
+#: templates/index.html:210
+msgid "Care Instruction"
+msgstr ""
+
+#: templates/index.html:211
+msgid "Privacy Policy"
+msgstr ""
+
+#: templates/index.html:214
+msgid "Contact Info"
+msgstr ""
+
+#: templates/index.html:219
+msgid "Sign Up On Our Mailing List:"
+msgstr ""
+

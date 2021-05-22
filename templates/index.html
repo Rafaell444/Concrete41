@@ -1,0 +1,173 @@
+{% extends "base.html" %}
+
+{% block style %}<link rel="stylesheet" href="../static/index.css">{% endblock %}
+{{navbar}}
+
+{% block contenthome %}
+
+        <div class="wrapper">
+    <div class="swiper_top">
+	<div class="swiper-container swiper1">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide " ><img class=" slide_img" src="../static/slider1.png" alt=""></div>
+			<div class="swiper-slide"><img class=" slide_img" src="../static/slider2.png" alt=""></div>
+			<div class="swiper-slide"><img class=" slide_img" src="../static/qotanski.jpg" alt=""></div>
+			<div class="swiper-slide"><img class=" slide_img" src="../static/qotanski.jpg" alt=""></div>
+		</div>
+		<div class="swiper-pagination swiper-pagination1"></div>
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>
+	</div>
+
+</div>
+
+
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+	<script>
+		var swiper1 = new Swiper('.swiper1', {
+  loop: true,
+  slidesPerView: 1,
+
+  pagination: {
+    el: '.swiper-pagination1',
+    clickable: true,
+    dynamicBullets: false,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  autoplay: {
+  	delay: 2000,
+  },
+
+  keyboard: {
+        enabled: true,
+      },
+
+
+
+})
+
+
+
+
+
+
+
+
+
+	</script>
+<!-- slider-end -->
+
+<div class="newarr lang" key="five"> <h3>{{ _('NEW ARRIVALS') }}</h3> </div>
+
+<!--card products-->
+
+    <div class="product-cards">
+
+
+        <div class="card_wrapper">
+            <div class="card">
+
+               <div class="card-img "> <img src="../static/qotanski.jpg" alt="IMAGE"></div>
+                <a href="#" ><h1 class="card-title lang" key="two">{{ _('Concrete FlowerPot') }}</h1></a>
+                <div class="card-details"><h2 class="card-availability">GEL 22,00&#x20BE;</h2> <div class="colors">
+                    <div class="color1"></div><div class="color2"></div><div class="color3"></div>
+                </div> </div>
+            </div>
+        </div>
+
+
+             <div class="card_wrapper">
+            <div class="card">
+
+               <div class="card-img"> <img src="../static/qotanski.jpg" alt="IMAGE"></div>
+                <a href="" ><h1 class="card-title lang" key="three">{{ _('Concrete FlowerPot') }}</h1></a>
+                <div class="card-details"><h2 class="card-availability">GEL 22,00&#x20BE;</h2> <div class="colors">
+                    <div class="color4"></div><div class="color5"></div><div class="color6"></div>
+                </div> </div>
+            </div>
+        </div>
+
+
+
+
+             <div class="card_wrapper">
+            <div class="card">
+
+               <div class="card-img"> <img src="../static/qotanski.jpg" alt="IMAGE"></div>
+                <a href="" ><h1 class="card-title lang" key="four">{{ _('Concrete FlowerPot') }}</h1></a>
+                <div class="card-details"><h2 class="card-availability">GEL 22,00&#x20BE;</h2> <div class="colors">
+                    <div class="color7"></div><div class="color8"></div><div class="color9"></div>
+                </div> </div>
+            </div>
+        </div>
+
+        </div>
+
+
+
+            </div>
+
+
+        <!-- collections --->
+
+
+    <div class="collections lang" key="six"> <h3>{{ _('COLLECTIONS') }}</h3> </div>
+
+
+
+<div class="container">
+    <div class="collection-cards">
+
+        <div class="colcard-wrapper">
+            <div class="colcard">
+                 <div class="colcard-img"> <img src="../static/qotanski.jpg" alt="IMAGE"></div>
+            </div>
+        </div>
+
+        <div class="colcard-wrapper">
+            <div class="colcard">
+                 <div class="colcard-img"> <img src="../static/qotanski.jpg" alt="IMAGE"></div>
+            </div>
+        </div>
+
+
+        <div class="colcard-wrapper">
+            <div class="colcard">
+                 <div class="colcard-img"> <img src="../static/qotanski.jpg" alt="IMAGE"></div>
+            </div>
+        </div>
+
+        <div class="colcard-wrapper">
+            <div class="colcard">
+                 <div class="colcard-img"> <img src="../static/qotanski.jpg" alt="IMAGE"></div>
+            </div>
+        </div>
+
+
+        <div class="colcard-wrapper">
+            <div class="colcard">
+                 <div class="colcard-img"> <img src="../static/qotanski.jpg" alt="IMAGE"></div>
+            </div>
+        </div>
+
+
+        <div class="colcard-wrapper">
+            <div class="colcard">
+                 <div class="colcard-img"> <img src="../static/qotanski.jpg" alt="IMAGE"></div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+
+{% endblock %}
+
+{{ footer }}

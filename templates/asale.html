@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="../static/adminflowerpot.css">
+    <link rel = "icon" href ="../static/conc41.png" type = "image/x-icon">
+</head>
+<body>
+
+    <div class="sidebar">
+      <a class="active" href = {{ url_for("aflowerpot") }}>Flowerpot</a>
+      <a href ={{ url_for("anashtray") }}>Ashtray</a>
+      <a href ={{ url_for("achess") }}>Chess</a>
+      <a href ={{ url_for("alamp") }}>Lamp</a>
+        <a href ={{ url_for("asale") }}>Sale</a>
+        <a href ={{ url_for("anabout") }}>About</a>
+    </div>
+
+    <div class="content">
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block style %}<link rel="stylesheet" href="../static/flowerpot.css">{% endblock %}
+{{ navbar }}
+
+
+{% block contentflower %}<div class="abouts"><h2>FLOWERPOT</h2></div>
+    <div class="content-wrapper">
+        <div class="container">
+            {% for key, value in product_dict.items() %}
+                <div class="info-wrap">
+                   <div class="info_img"> <img class="imgs" src="../static/qotanski.jpg" alt="IMAGE"></div>
+                    <div class="info-content">
+                        <div class="card-details">
+                            <h2 class="card-availability">Available Colors</h2>
+                            <div class="colors">
+                                {% for color in value[5:] %}
+                                    <div style="height: 25px;width: 25px;border-radius: 50%;background: {{ color }};margin-right: 5px"></div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div class="card-details">
+                            <h2 class="price">Price</h2><h1 class="p">GEL {{ "%.2f"|format(value[0]) }}&#x20BE;</h1>
+{#                            <h2 class="price">Price</h2><h1 class="p">GEL {{ value[0] }}&#x20BE;</h1>#}
+                        </div>
+                        <div class="card-details">
+                            <h2 class="code">Code</h2><h1 class="p">{{ value[1] }}</h1>
+                        </div>
+                        <div class="card-details">
+                            <h2 class="size">Size</h2><h1 class="p">Height -{{ value[2] }}cm<br>Inner diameter-{{ value[3] }}cm<br>Outer diameter-{{ value[4] }}cm</h1>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
+
+{{ footer }}

@@ -1,0 +1,486 @@
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+	text-decoration: none;
+}
+* {
+	box-sizing: border-box;
+}
+
+
+button{
+outline:none;
+border:none;
+}
+
+@import url("//cdn.web-fonts.ge/fonts/bpg-nino-mtavruli/css/bpg-nino-mtavruli.min.css");
+
+/*#############################*/
+
+.header{
+width:100%;
+overflow-x:hidden;
+}
+
+.inner-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 181px;
+    /*left: 0;*/
+    /*top: 0;*/
+    font-family: "Bebas Neue",serif;
+    font-size: 30px;
+    color:#000 !important;
+
+background: #FFD700;
+}
+
+ul {
+  list-style-type: none;
+    display: flex;
+    font-family:"Bebas Neue", "BPG Nino Mtavruli",serif;
+ }
+li.smths{
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+li a{
+
+    color: black;
+}
+.navigation{
+    margin-top:4px ;
+    display:flex;
+    align-items:center;
+    font-family:"Bebas Neue", "BPG Nino Mtavruli",serif;
+}
+
+.trans{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    list-style: none;
+    margin-left: 50px;
+
+
+
+}
+.trans1{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    list-style: none;
+    margin-left: 10px;
+
+
+
+
+}
+.lang button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+}
+
+.logo{
+
+    margin-bottom: 30px;}
+
+
+.responsive-menu{
+    display:none;
+}
+
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+      font-family: bpglecaps, serif;
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #3d3d3d;
+  }
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+
+
+  .fas.fa-bars{
+      cursor: pointer;
+  }
+
+/*content*/
+
+.abouts h2{
+     text-align: left;
+    margin-left: 400px;
+    margin-top:60px;
+    font-size: 50px;
+    font-family: Bebas Neue, serif;
+}
+
+.aboutstxt{
+    text-align: left;
+    margin-left: 350px;
+    margin-top: 34px;
+    font-size: 20px;
+    font-family: Arial,serif;
+    margin-bottom: 250px;
+    line-height: 3rem;
+}
+
+
+/*footer*/
+
+.footer-container{
+
+    background-color: #000000;
+    /*padding-top: 10px;*/
+    padding: 44px 0 1.2rem 0;
+
+}
+
+.footer{
+    overflow-x:hidden;
+    width:100%;
+    min-height: 20vh;
+    background-color: black;
+    color: #ffd700;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    margin:0 auto;
+    margin-right: 150px;
+    /*margin-left: 25px;*/
+}
+
+.footer-heading{
+
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+    font-family:"Bebas Neue", "BPG Nino Mtavruli",serif;
+}
+
+.footer-heading h2{
+    margin-bottom: 2rem;
+    font-size:25px;
+
+}
+
+.footer-heading a{
+    color: #ffd700;
+    text-decoration:none;
+    margin-bottom: 0.5rem;
+
+}
+
+.footer-heading a:hover{
+    color: #0d33ee;
+    transition:0.3s ease-out;
+}
+
+.footer-email-form h2{
+    margin-bottom: 2rem;
+    font-size:25px;
+    margin-right: 150px;
+    font-family:"Bebas Neue", "BPG Nino Mtavruli",serif;
+
+}
+
+#footer-email{
+    width: 250px;
+    height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding-right: 2rem;
+}
+#footer-email::placeholder{
+    color: #b1b1b1;
+}
+#footer-email-btn{
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    outline: none;
+    border: none;
+    color: #000000;
+    font-size: 1rem;
+
+
+
+}
+
+#footer-email-btn:hover{
+    cursor: pointer;
+    background-color: #ffd700;
+    transition: all 0.4s ease-out;
+}
+
+.footer-heading.footer-1 a{
+    margin-bottom: 30px;
+}
+
+.footer-heading.footer-2 a{
+    margin-bottom: 30px;
+}
+
+.footer-heading.footer-4 a{
+    margin-bottom: 30px;
+}
+
+/*.footer-heading.footer-4 img{*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*}*/
+.footer-heading.footer-4{
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.footer-column1,.footer-column2,.footer-column3,.footer-column4{
+    display:flex;
+    flex-direction:column;
+}
+
+
+
+.fa-youtube {
+  background: #000000;
+  color: white;
+}
+.fa.fa-youtube:hover::before{
+    color: red;
+}
+.fa-instagram {
+  background: #000000;
+  color: white;
+}
+.fa.fa-instagram:hover::before{
+    color: orange;
+}
+
+.fa-pinterest {
+  background: #000000;
+  color: white;
+}
+.fa.fa-pinterest:hover::before{
+    color: red;
+}
+
+.fa-facebook {
+  background: #000000;
+  color: white;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 15px;
+}
+
+.footer-heading.footer-4 h2{
+    color: black;
+
+}
+
+/*footerbelow*/
+
+.footerbelow{
+    background-color: #FFD700;
+    padding-bottom:34px;
+    text-align: left;
+    outline: 0;
+    border: 0;
+    overflow-x:hidden;
+}
+.footerbelow p{
+    font-family: Bebas Neue, serif;
+    font-size: 20px;
+    padding-left: 325px;
+    padding-top: 30px;
+}
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 99999; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: #F5F5F5; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-y:hidden;
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    -webkit-box-shadow: 0px -6px 17px 0px rgba(50, 50, 50, 0.4);
+-moz-box-shadow:    0px -6px 17px 0px rgba(50, 50, 50, 0.4);
+box-shadow:         0px -6px 17px 0px rgba(50, 50, 50, 0.4);
+    padding-top:50px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    /*justify-content: center;*/
+
+  }
+
+@media only screen and (max-width: 970px) {
+  .responsive-menu {
+      display: block;
+  }
+
+    .product-cards{
+        flex-direction:column;
+        align-items: center;
+    }
+
+    .card_wrapper{
+        margin-right:0px !important;
+    }
+
+
+  .navigation{
+      display:none;
+  }
+
+    .trans{
+        margin-left: 0;
+
+    }
+    .trans1{
+        margin-left: 0;
+    }
+
+      .footer-email-form h2 {
+        margin-right: 0;
+    }
+
+    .footer{
+        text-align: center;
+    }
+
+    .footer-heading.footer-2 a {
+        margin-left: 50px;
+    }
+
+    .footerbelow p{
+        padding-left: 250px;
+    }
+    .footer-heading{
+        margin-right: 0;
+    }
+}
+
+
+@media only screen and (max-width: 1280px) {
+    li.smths{
+        font-size: 22px;
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .aboutstxt{
+        margin-left: 50px;
+    }
+
+    .abouts h2{
+        margin-left: 90px;
+    }
+}
+
+.loader{
+    position: fixed;
+    z-index: 99;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background:white ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader.hidden{
+    animation:fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
